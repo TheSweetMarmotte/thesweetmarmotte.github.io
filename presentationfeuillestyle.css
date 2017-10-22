@@ -1,0 +1,44 @@
+.fond{
+    font-family: 'Alex Brush', cursive;
+    background-image: url("https://i.pinimg.com/736x/2c/24/07/2c240796d47a2c0c946732679a25b330--printer-paper-kayu.jpg");
+    background-repeat: no-repeat;
+    background-size: 470px;
+    font-size: 30px;
+    line-height: 25px;
+    overflow: hidden;
+    height: 661px;
+}
+h1{
+    position: absolute;
+    top: 60px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    text-shadow: 1px 1px 1px;
+    left: 55px;
+    font-size: 50px;
+    line-height:35px;
+}
+.description{
+    top: 130px;
+    left: 30px;
+    position: absolute;
+    width: 410px;
+    height: 390px;
+    overflow: auto;
+}
+#image{
+    width: 100px;
+    position: absolute;
+    top: 546px;
+    left: 60px;
+}
+body{
+    font-family: 'Alex Brush', cursive;
+}
+#video{
+    position:absolute;
+    top: 610px;
+    left: 350px;
+    float; right;
+}
