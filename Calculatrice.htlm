@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Exercice</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" rel="calculatrice.css">
+			<style>
+				button:focus {outline:0;}
+				.touche1 {
+						width: 74px;
+						height: 74px;
+						border-radius: 40px;
+						background-color: silver;
+						border: silver 1px;
+						font-size: 19px;
+						}
+				.touche2 {
+						width: 74px;
+						height: 74px;
+						border-radius: 40px;
+						background-color: gold;
+						border: silver 1px;
+						font-size: 19px;
+						}
+				.rectangle {
+						width: 280px;
+						height: 74px;
+						border-radius: 15px;
+						background-color: #F3EEEE;
+						font-size: 30px;
+						padding: 15px;
+						text-align: left;
+						margin: auto;
+						}
+				.fond {
+						width: 315px;
+						border-radius: 24px;
+						background-color: black;
+						padding: 10px 7px 7px 7px;
+						}
+				.touche1:active {
+						background-color: white;
+						}
+				.touche2:active {
+						background-color: white;
+						}
+			</style>
+		</head>
+		<body>
+			<h2>Calculator</h2>
+
+				<div class="fond">
+					<div class="rectangle"><span id="demo"></span><br><span id="recap"></span></div><br>
+						<table align="center">
+							<tr>
+								<td><button type="button" onclick="addcharacter(1)" class="touche1">1</button></td>
+								<td><button type="button" onclick="addcharacter(2)" class="touche1">2</button></td>
+								<td><button type="button" onclick="addcharacter(3)" class="touche1">3</button></td>
+								<td><button type="button" onclick="addoperator('+')" class="touche2">+</button></td>
+							</tr>
+							<tr>
+								<td><button type="button" onclick="addcharacter(4)" class="touche1">4</button></td>
+								<td><button type="button" onclick="addcharacter(5)" class="touche1">5</button></td>
+								<td><button type="button" onclick="addcharacter(6)" class="touche1">6</button></td>
+								<td><button type="button" onclick="addoperator('-')" class="touche2">-</button></td>
+							</tr>
+							<tr>
+								<td><button type="button" onclick="addcharacter(7)" class="touche1">7</button></td>
+								<td><button type="button" onclick="addcharacter(8)" class="touche1">8</button></td>
+								<td><button type="button" onclick="addcharacter(9)" class="touche1">9</button></td>
+								<td><button type="button" onclick="addoperator('*')" class="touche2">*</button></td>
+							</t>
+							<tr>
+								<td><button type="button" onclick="addcharacter(0)" class="touche1">0</button></td>
+								<td><button type="button" onclick="addcharacter('.')" class="touche2">.</button></td>
+								<td><button type="button" onclick="compute()" class="touche2">=</button></td>
+								<td><button type="button" onclick="addoperator('/')" class="touche2">/</button></td>
+							</tr>
+							<tr>
+								<td><button type="button" onclick="reset()" class="touche2">C</button></td>
+								<td><button type="button" onclick="addcharacter('(')" class="touche2">(</button></td>
+								<td><button type="button" onclick="addcharacter(')')" class="touche2">)</button></td>
+								<td><button type="button" onclick="erase()" class="touche2">R</button></td>
+							</tr>
+							<tr>
+								<td><button type="button" onclick="addcharacter('e')" class="touche2">e</button></td>
+								<td><button type="button" onclick="addcharacter('cos(')" class="touche2">cos</button></td>
+								<td><button type="button" onclick="addcharacter('sin(')" class="touche2">sin</button></td>
+								<td><button type="button" onclick="addcharacter('tan(')" class="touche2">tan</button></td>
+							</tr>
+					</table>
+
+				<script>
+					var calculation="";
+	
+					var display = document.getElementById("demo");
+	
+					var computed = false;
+					
+					var displayresult = document.getElementById("recap");
+	
+					function addcharacter(y){
+						if (computed){
+						reset();
+						}
+						if (display.offsetWidth > 260) {
+						return;
+						}
+						calculation=calculation.concat(y);
+						display.innerHTML = calculation;
+						computed = false;
+						
+						}
+	
+					function addoperator(y){
+						if (computed == false && display.offsetWidth > 260) {
+						return;
+						}
+						calculation=calculation.concat(y);
+						display.innerHTML = calculation;
+						displayresult.innerHTML = "";
+						computed = false;
+						 
+						}
+						
+					function compute(){
+						calculation=calculation.replace('cos', 'Math.cos');
+						calculation=calculation.replace('sin', 'Math.sin');
+						calculation=calculation.replace('tan', 'Math.tan');
+						var result=eval(calculation);
+						displayresult.innerHTML = "= " + result;
+						calculation = String(result);
+						computed = true;
+						
+						if (displayresult.offsetWidth > 260){
+							displayresult.innerHTML = "= " + result.toExponential(4);
+							calculation = result.toExponential(4);
+						}
+						
+						
+						}
+		
+					function reset(){
+						display.innerHTML = "";
+						calculation = "";
+						displayresult.innerHTML = "";
+						}
+	
+					function erase(){
+						var back = calculation.slice(0, -1);
+						display.innerHTML = back;
+						calculation = back;
+						}
+						
+					function event(e) {
+						switch ( e.key ) {
+							case "1":
+								addcharacter(1);
+								break;
+							case "2":
+								addcharacter(2);
+								break;
+							case "3":
+								addcharacter(3);
+								break;
+							case "+":
+								addoperator("+");
+								break;
+							case "4":
+								addcharacter(4);
+								break;
+							case "5":
+								addcharacter(5);
+								break;
+							case "6":
+								addcharacter(6);
+								break;
+							case "-":
+								addoperator("-");
+								break;
+							case "7":
+								addcharacter(7);
+								break;
+							case "8":
+								addcharacter(8);
+								break;
+							case "9":
+								addcharacter(9);
+								break;
+							case "*":
+								addoperator("*");
+								break;
+							case "0":
+								addcharacter(0);
+								break;
+							case ",":
+								addcharacter(",");
+								break;
+							case "/":
+								addoperator("/");
+								break;
+							case "(":
+								addcharacter("(");
+								break;
+							case ")":
+								addcharacter(")");
+								break;
+							case "e":
+								addcharacter("e");
+								break;
+							case "c":
+								addcharacter("c");
+								break;
+							case "o":
+								addcharacter("o");
+								break;
+							case "s":
+								addcharacter("s");
+								break;
+						}
+						
+						switch ( e.keyCode ) {
+							case 13:
+								compute();
+								break;
+							case 46:
+								reset();
+								break;
+							case 8:
+								erase();
+								break;
+						}
+					}
+					
+					document.addEventListener("keypress", event, false);	
+					</script>
+				</div>
+
+			</body>
+		</html>
