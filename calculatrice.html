@@ -8,7 +8,7 @@
 				button:focus {outline:0;}
 				/* Appareance of the keys */
 				.touche1 {
-						width: 74px;
+						width: 24%;
 						height: 74px;
 						border-radius: 40px;
 						background-color: silver;
@@ -16,7 +16,7 @@
 						font-size: 19px;
 						}
 				.touche2 {
-						width: 74px;
+						width: 24%;
 						height: 74px;
 						border-radius: 40px;
 						background-color: gold;
@@ -56,42 +56,43 @@
 				<div class="fond">
 					<div align="center" width="80%">
 							<div class="rectangle" width="60px"><span id="demo"></span><br><span id="recap"></span></div><br>
-								<div width="80%"></div><button type="button" onclick="addcharacter(1)" class="touche1">1</button></td>
-								<button type="button" onclick="addcharacter(2)" class="touche1">2</button></td>
-								<button type="button" onclick="addcharacter(3)" class="touche1">3</button></td>
-								<button type="button" onclick="addoperator('+')" class="touche2">+</button></td>
-							</div>
-							<tr>
-								<td><button type="button" onclick="addcharacter(4)" class="touche1">4</button></td>
-								<td><button type="button" onclick="addcharacter(5)" class="touche1">5</button></td>
-								<td><button type="button" onclick="addcharacter(6)" class="touche1">6</button></td>
-								<td><button type="button" onclick="addoperator('-')" class="touche2">-</button></td>
-							</tr>
-							<tr>
-								<td><button type="button" onclick="addcharacter(7)" class="touche1">7</button></td>
-								<td><button type="button" onclick="addcharacter(8)" class="touche1">8</button></td>
-								<td><button type="button" onclick="addcharacter(9)" class="touche1">9</button></td>
-								<td><button type="button" onclick="addoperator('*')" class="touche2">*</button></td>
-							</t>
-							<tr>
-								<td><button type="button" onclick="addcharacter(0)" class="touche1">0</button></td>
-								<td><button type="button" onclick="addcharacter('.')" class="touche2">.</button></td>
-								<td><button type="button" onclick="compute()" class="touche2">=</button></td>
-								<td><button type="button" onclick="addoperator('/')" class="touche2">/</button></td>
-							</tr>
-							<tr>
-								<td><button type="button" onclick="reset()" class="touche2">C</button></td>
-								<td><button type="button" onclick="addcharacter('(')" class="touche2">(</button></td>
-								<td><button type="button" onclick="addcharacter(')')" class="touche2">)</button></td>
-								<td><button type="button" onclick="erase()" class="touche2">R</button></td>
-							</tr>
-							<tr>
-								<td><button type="button" onclick="addcharacter('e')" class="touche2">e</button></td>
-								<td><button type="button" onclick="addcharacter('cos(')" class="touche2">cos</button></td>
-								<td><button type="button" onclick="addcharacter('sin(')" class="touche2">sin</button></td>
-								<td><button type="button" onclick="addcharacter('tan(')" class="touche2">tan</button></td>
-							</tr>
-					</table>
+								<div width="80%">
+									<button type="button" onclick="addcharacter(1)" class="touche1">1</button>
+									<button type="button" onclick="addcharacter(2)" class="touche1">2</button>
+									<button type="button" onclick="addcharacter(3)" class="touche1">3</button>
+									<button type="button" onclick="addoperator('+')" class="touche2">+</button>
+								</div>
+								<div width="80%">
+									<button type="button" onclick="addcharacter(4)" class="touche1">4</button>
+									<button type="button" onclick="addcharacter(5)" class="touche1">5</button>
+									<button type="button" onclick="addcharacter(6)" class="touche1">6</button>
+									<button type="button" onclick="addoperator('-')" class="touche2">-</button>
+								</div>
+								<div width="80%">
+									<button type="button" onclick="addcharacter(7)" class="touche1">7</button>
+									<button type="button" onclick="addcharacter(8)" class="touche1">8</button>
+									<button type="button" onclick="addcharacter(9)" class="touche1">9</button>
+									<button type="button" onclick="addoperator('*')" class="touche2">*</button>
+								</div>
+								<div width="80%">
+									<button type="button" onclick="addcharacter(0)" class="touche1">0</button>
+									<button type="button" onclick="addcharacter('.')" class="touche2">.</button>
+									<button type="button" onclick="compute()" class="touche2">=</button>
+									<button type="button" onclick="addoperator('/')" class="touche2">/</button>
+								</div>
+								<div width="80%">
+									<button type="button" onclick="reset()" class="touche2">C</button>
+									<button type="button" onclick="addcharacter('(')" class="touche2">(</button>
+									<button type="button" onclick="addcharacter(')')" class="touche2">)</button>
+									<button type="button" onclick="erase()" class="touche2">R</button>
+								</div>
+								<div width="80%">
+									<button type="button" onclick="addcharacter('e')" class="touche2">e</button>
+									<button type="button" onclick="addcharacter('cos(')" class="touche2">cos</button>
+									<button type="button" onclick="addcharacter('sin(')" class="touche2">sin</button>
+									<button type="button" onclick="addcharacter('tan(')" class="touche2">tan</button>
+								</div>
+					</div>
 
 				<script>
 					var calculation="";
