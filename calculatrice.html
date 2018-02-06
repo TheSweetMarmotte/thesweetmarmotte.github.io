@@ -8,38 +8,52 @@
 				button:focus {outline:0;}
 				/* Appareance of the keys */
 				.touche1 {
-						width: 20%;
-						height: 74px;
+						width: 22%;
 						border-radius: 40px;
 						background-color: silver;
-						border: silver 1px;
-						font-size: 19px;
+						position: relative;
 						display: inline-block;
+						margin-top: 46%;
+						margin-bottom: 46%;
+						margin: 1px;
+						border: gold 1px;
+						padding: 8% 0% 8% 0%;
+						}
+				#nombre {
+						text-align: center;
+						vertical-align: middle;
+						font-size: 20px;
+						font-weight: bold;
 						}
 				.touche2 {
-						width: 20%;
-						height: 74px;
+						width: 22%;
 						border-radius: 40px;
 						background-color: gold;
 						border: silver 1px;
-						font-size: 19px;
+						position: relative;
 						display: inline-block;
+						margin-top: 46%;
+						margin-bottom: 46%;
+						margin: 1px;
+						padding: 8% 0% 8% 0%;
 						}
 				/*Appareance of the screen */
 				.rectangle {
-						width: 280px;
+						width: 90%;
 						height: 74px;
 						border-radius: 15px;
 						background-color: #F3EEEE;
 						font-size: 30px;
-						padding: 15px;
+						padding: 16px;
 						text-align: left;
 						margin: auto;
 						}
 				/* Appareance of the background */
-				.fond {
+				body {
 						background-color: black;
 						text-align: center;
+						padding: 16px 6px 0px 6px;
+						height: 100%;
 						}
 				/* Appareance of the keys when clic */
 				.touche1:active {
@@ -51,45 +65,43 @@
 			</style>
 		</head>
 		<body>
-			<h2>Calculator</h2>
-			
-				<div class="fond">
-							<div class="rectangle" width="60px"><span id="demo"></span><br><span id="recap"></span></div><br>
-								<div width="80%">
-									<button type="button" onclick="addcharacter(1)" class="touche1">1</button>
-									<button type="button" onclick="addcharacter(2)" class="touche1">2</button>
-									<button type="button" onclick="addcharacter(3)" class="touche1">3</button>
-									<button type="button" onclick="addoperator('+')" class="touche2">+</button>
+			<div class="fond">
+							<div class="rectangle"><span id="demo"></span><br><span id="recap"></span></div><br>
+								<div width="90%">
+									<button type="button" onclick="addcharacter(1)" class="touche1"><span id="nombre">1</span></button>
+									<button type="button" onclick="addcharacter(2)" class="touche1"><span id="nombre">2</span></button>
+									<button type="button" onclick="addcharacter(3)" class="touche1"><span id="nombre">3</span></button>
+									<button type="button" onclick="addoperator('+')" class="touche2"><span id="nombre">+</span></button>
 								</div>
-								<div width="80%">
-									<button type="button" onclick="addcharacter(4)" class="touche1">4</button>
-									<button type="button" onclick="addcharacter(5)" class="touche1">5</button>
-									<button type="button" onclick="addcharacter(6)" class="touche1">6</button>
-									<button type="button" onclick="addoperator('-')" class="touche2">-</button>
+								<div width="90%">
+									<button type="button" onclick="addcharacter(4)" class="touche1"><span id="nombre">4</span></button>
+									<button type="button" onclick="addcharacter(5)" class="touche1"><span id="nombre">5</span></button>
+									<button type="button" onclick="addcharacter(6)" class="touche1"><span id="nombre">6</span></button>
+									<button type="button" onclick="addoperator('-')" class="touche2"><span id="nombre">-</span></button>
 								</div>
-								<div width="80%">
-									><button type="button" onclick="addcharacter(7)" class="touche1">7</button>
-									<button type="button" onclick="addcharacter(8)" class="touche1">8</button>
-									<button type="button" onclick="addcharacter(9)" class="touche1">9</button>
-									<button type="button" onclick="addoperator('*')" class="touche2">*</button>
+								<div width="90%">
+									<button type="button" onclick="addcharacter(7)" class="touche1"><span id="nombre">7</span></button>
+									<button type="button" onclick="addcharacter(8)" class="touche1"><span id="nombre">8</span></button>
+									<button type="button" onclick="addcharacter(9)" class="touche1"><span id="nombre">9</span></button>
+									<button type="button" onclick="addoperator('*')" class="touche2"><span id="nombre">*</span></button>
 								</div>
-								<div width="80%">
-									<button type="button" onclick="addcharacter(0)" class="touche1">0</button>
-									<button type="button" onclick="addcharacter('.')" class="touche2">.</button>
-									<button type="button" onclick="compute()" class="touche2">=</button>
-									<button type="button" onclick="addoperator('/')" class="touche2">/</button>
+								<div width="90%">
+									<button type="button" onclick="addcharacter(0)" class="touche1"><span id="nombre">0</span></button>
+									<button type="button" onclick="addcharacter('.')" class="touche2"><span id="nombre">.</span></button>
+									<button type="button" onclick="compute()" class="touche2"><span id="nombre">=</span></button>
+									<button type="button" onclick="addoperator('/')" class="touche2"><span id="nombre">/</span></button>
 								</div>
-								<div width="80%">
-									<button type="button" onclick="reset()" class="touche2">C</button>
-									<button type="button" onclick="addcharacter('(')" class="touche2">(</button>
-									<button type="button" onclick="addcharacter(')')" class="touche2">)</button>
-									<button type="button" onclick="erase()" class="touche2">R</button>
+								<div width="90%">
+									<button type="button" onclick="reset()" class="touche2"><span id="nombre">C</span></button>
+									<button type="button" onclick="addcharacter('(')" class="touche2"><span id="nombre">(</span></button>
+									<button type="button" onclick="addcharacter(')')" class="touche2"><span id="nombre">)</span></button>
+									<button type="button" onclick="erase()" class="touche2"><span id="nombre">R</span></button>
 								</div>
-								<div width="80%">
-									<button type="button" onclick="addcharacter('e')" class="touche2">e</button>
-									<button type="button" onclick="addcharacter('cos(')" class="touche2">cos</button>
-									<button type="button" onclick="addcharacter('sin(')" class="touche2">sin</button>
-									<button type="button" onclick="addcharacter('tan(')" class="touche2">tan</button>
+								<div width="90%">
+									<button type="button" onclick="addcharacter('e')" class="touche2"><span id="nombre">e</span></button>
+									<button type="button" onclick="addcharacter('cos(')" class="touche2"><span id="nombre">cos</span></button>
+									<button type="button" onclick="addcharacter('sin(')" class="touche2"><span id="nombre">sin</span></button>
+									<button type="button" onclick="addcharacter('tan(')" class="touche2"><span id="nombre">tan</span></button>
 								</div>
 					</div>
 
