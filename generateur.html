@@ -2,11 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="generateuraspect.css">
+        <link rel="stylesheet" href="aspect.css">
     </head>
     
     <body>
+        <h1>Générateur</h1>
         <form id="formulaire">
+            <h2>Informations</h2>
+            <div = id="devanture">
             Pseudo<input type="text" name="pseudo">
             <br>
             Adresse de l'avatar<input type="text" name="avatar">
@@ -31,16 +34,28 @@
             <br>
             Image background<input type="text" name="image">
             <br>
+            </div>
+            <div id="devanture">
             Caractère<input type="text" name="caractere">
             <br>
+            </div>
+            <div id="devanture">
             Journée<input type="text" name="journee">
             <br>
+            </div>
+            <div id="devanture">
             Caractéristiques de la race<input type="text" name="race">
             <br>
+            </div>
+            <div id="devanture">
             Les affiliations et opinions<input type="text" name="idees">
             <br>
+            </div>
+            <div id="devanture">
             Singularités<input type="text" name="singularites">
             <br>
+            </div>
+            <div id="devanture">
             Le type de votre personnage<input type="text" name="personnage">
             <br>
             Blase<input type="text" name="blase">
@@ -58,6 +73,7 @@
             Crédits<input type="text" name="credits">
             <br>
             Pour terminer<input type="text" name="terminer">
+            </div>
         </form>
         <button type="button" onclick="generer()">Générer</button>
         <div id="fich"></div>
@@ -67,14 +83,14 @@
                 var x=document.getElementById("formulaire");
                 var text = '<div id="PRZT"><div class="PRZTp1"><div class="PRZTit">'+ x.elements[0].value;
                 text += '</div><div class="PRZTf"><img class="PRZTa" src="' + x.elements[1].value;
-                text += '" alt="" /><div class="PRZTi"><l>Date et lieu de naissance</l>' + x.elements[2].value;
-                text += '<l>Nationalité</l>' + x.elements[3].value;
-                text += '<l>Profession</l>' + x.elements[4].value;
-                text += '<l>Lieu d’habitation</l>' + x.elements[5].value;
-                text += '<l>Situation financière</l>' + x.elements[6].value;
-                text += '<l>Spécificités</l>' + x.elements[7].value;
-                text += '<l>Clan</l>' + x.elements[8].value;
-                text += '<l>Possédé</l>' + x.elements[9].value;
+                text += '" alt="" /><div class="PRZTi"><l>Date et lieu de naissance</l>\n' + x.elements[2].value + '\n\n';
+                text += '<l>Nationalité</l>\n' + x.elements[3].value + '\n\n';
+                text += '<l>Profession</l>\n' + x.elements[4].value + '\n\n';
+                text += '<l>Lieu d’habitation</l>\n' + x.elements[5].value + '\n\n';
+                text += '<l>Situation financière</l>\n' + x.elements[6].value + '\n\n';
+                text += '<l>Spécificités</l>\n' + x.elements[7].value + '\n\n';
+                text += '<l>Clan</l>\n' + x.elements[8].value + '\n\n';
+                text += '<l>Possédé</l>\n' + x.elements[9].value + '\n\n';
                 text += '</div><div class="PRZTbg " style="background: url(';
                 text += "'" + x.elements[10].value;
                 text += "'";
@@ -84,14 +100,14 @@
                 text += '</div></div></li><li><input id="tabaffiliationsHuman" name="ongletshuman" type="radio" /> <label for="tabaffiliationsHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">' + x.elements[14].value;
                 text += '</div></div></li><li><input id="tabdetailsHuman" name="ongletshuman" type="radio" /> <label for="tabdetailsHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">' + x.elements[15].value;
                 text += '</div></div></li></ul><div class="PRZT-box"><div class="PRZT-box-title">Who am I ?</div><div class="PRZT-box-content-irl"><img class="PRZT-box-icon " src="https://i.imgbox.com/GEds325T.png" alt="" /><div class="PRZT-txt-irl"><l>Je suis</l>' + x.elements[16].value;
-                text += '<l>Blase</l>' + x.elements[17].value;
-                text += '<l>Visage</l>' + x.elements[18].value;
-                text += '<l>Sagesse</l>' + x.elements[19].value;
-                text += '<l>Découverte</l>' + x.elements[20].value;
-                text += '<l>Présence</l>' + x.elements[21].value;
-                text += '<l>Avis</l>' + x.elements[22].value;
-                text += '<l>Crédits</l>' + x.elements[23].value;
-                text += '<l>Mot de la fin</l>' + x.elements[24].value;
+                text += '<l>Blase</l> ' + x.elements[17].value;
+                text += '<l>Visage</l> ' + x.elements[18].value;
+                text += '<l>Sagesse</l> ' + x.elements[19].value;
+                text += '<l>Découverte</l> ' + x.elements[20].value;
+                text += '<l>Présence</l> ' + x.elements[21].value;
+                text += '<l>Avis</l> ' + x.elements[22].value;
+                text += '<l>Crédits</l> ' + x.elements[23].value;
+                text += '<l>Mot de la fin</l> ' + x.elements[24].value;
                 text += '</div></div></div></div></div></div></div>';
                 text = text.replace(/</gi, "&lt;");
                 text = text.replace(/>/gi, "&gt;");

@@ -98,12 +98,12 @@
 									<button type="button" onclick="erase()" class="touche2"><span id="nombre">R</span></button>
 								</div>
 								<div width="90%">
-									<button type="button" onclick="addcharacter('e')" class="touche2"><span id="nombre">e</span></button>
-									<button type="button" onclick="addcharacter('cos(')" class="touche2"><span id="nombre">cos</span></button>
-									<button type="button" onclick="addcharacter('sin(')" class="touche2"><span id="nombre">sin</span></button>
-									<button type="button" onclick="addcharacter('tan(')" class="touche2"><span id="nombre">tan</span></button>
+									<button type="button" onclick="addoperator('e')" class="touche2"><span id="nombre">e</span></button>
+									<button type="button" onclick="addplus('cos(')" class="touche2"><span id="nombre">cos</span></button>
+									<button type="button" onclick="addplus('sin(')" class="touche2"><span id="nombre">sin</span></button>
+									<button type="button" onclick="addoplus('tan(')" class="touche2"><span id="nombre">tan</span></button>
 								</div>
-					</div>
+			</div>
 
 				<script>
 					var calculation="";
@@ -114,7 +114,7 @@
 					
 					var displayresult = document.getElementById("recap");
 	
-					function addcharacter(y){
+					function addcharacter(y) {
 						if (computed){
 						reset();
 						}
@@ -127,17 +127,31 @@
 						
 						}
 	
-					function addoperator(y){
+					function addoperator(y) {
 						if (computed == false && display.offsetWidth > 260) {
 						return;
 						}
-						calculation=calculation.concat(y);
-						display.innerHTML = calculation;
-						displayresult.innerHTML = "";
-						computed = false;
-						 
-						}
+							calculation=calculation.concat(y);
+							display.innerHTML = calculation;
+							displayresult.innerHTML = "";
+							computed = false;
 						
+						}
+					
+					function addplus(y) {
+						if (computed == false && display.offsetWidth > 260) {
+							return;
+						}
+							
+						if ( computed == true ) {
+							calculation = y + calculation + ')';
+							}
+							display.innerHTML = calculation;
+							displayresult.innerHTML = "";
+							computed = false;
+						
+					}
+					
 					function compute(){
 						calculation=calculation.replace('cos', 'Math.cos');
 						calculation=calculation.replace('sin', 'Math.sin');
@@ -151,7 +165,6 @@
 							displayresult.innerHTML = "= " + result.toExponential(4);
 							calculation = result.toExponential(4);
 						}
-						
 						
 						}
 		
@@ -249,7 +262,6 @@
 					
 					document.addEventListener("keypress", event, false);	
 					</script>
-				</div>
 
 			</body>
 		</html>
