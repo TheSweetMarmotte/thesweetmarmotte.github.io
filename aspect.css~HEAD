@@ -1,0 +1,51 @@
+input {
+    width: 250px;
+    border-style: solid;
+    border-size: 5px;
+    border-color: #B5B1B1;
+    border-radius: 4px;  
+    height: 20px;
+    background-color: #EFEAEA;
+    padding: 5px;
+    display: block;
+    }
+    
+#fich {
+    width: 500px;
+    background-color: rgba(160, 90, 205, 0.1);
+    border: 1px black;
+    height: 450px;
+    display: block;
+    margin: auto;
+    margin-top: 48px;
+    overflow: scroll;
+    white-space: pre-wrap;
+}
+
+body {
+    background-color: #002266;
+}
+
+#devanture {
+    width: 600px;
+    margin: auto;
+    background-color: #a6a6a6;
+    box-shadow: 1px 1px 1px 1px #000000;
+    padding: 26px;
+    margin-bottom: 46px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+button {
+    display: block;
+    margin: auto;
+}

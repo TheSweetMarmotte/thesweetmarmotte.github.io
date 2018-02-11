@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -116,4 +117,108 @@
             }
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="aspect.css">
+    </head>
+    
+    <body>
+        <form id="formulaire">
+            Pseudo<input type="text" name="pseudo">
+            <br>
+            Adresse de l'avatar<input type="text" name="avatar">
+            <br>
+            Date et lieu de naissance<input type="text" name="naissance">
+            <br>
+            Nationalité<input type="text" name="nationalite">
+            <br>
+            Profession<input type="text" name="profession">
+            <br>
+            Lieu d'habitation<input type="text" name="habitation">
+            <br>
+            Situation financière<input type="text" name="finances">
+            <br>
+            Spécificités<input type="text" name="specificite">
+            <br>
+            Clan<input type="text" name="clan">
+            <br>
+            Possédé<input type="text" name="possede">
+            <br>
+            Marqué<input type="text" name="marque">
+            <br>
+            Image background<input type="text" name="image">
+            <br>
+            Caractère<input type="text" name="caractere">
+            <br>
+            Journée<input type="text" name="journee">
+            <br>
+            Caractéristiques de la race<input type="text" name="race">
+            <br>
+            Les affiliations et opinions<input type="text" name="idees">
+            <br>
+            Singularités<input type="text" name="singularites">
+            <br>
+            Le type de votre personnage<input type="text" name="personnage">
+            <br>
+            Blase<input type="text" name="blase">
+            <br>
+            Visage<input type="text" name="visage">
+            <br>
+            Sagesse<input type="text" name="sagesse">
+            <br>
+            Découverte<input type="text" name="decouverte">
+            <br>
+            Présence<input type="text" name="presence">
+            <br>
+            Avis<input type="text" name="avis">
+            <br>
+            Crédits<input type="text" name="credits">
+            <br>
+            Pour terminer<input type="text" name="terminer">
+        </form>
+        <button type="button" onclick="generer()">Générer</button>
+        <div id="fich"></div>
+        
+        <script>
+            function generer(){
+                var x=document.getElementById("formulaire");
+                var text = '<div id="PRZT"><div class="PRZTp1"><div class="PRZTit">'+ x.elements[0].value;
+                text += '</div><div class="PRZTf"><img class="PRZTa" src="' + x.elements[1].value;
+                text += '" alt="" /><div class="PRZTi"><l>Date et lieu de naissance</l>' + x.elements[2].value;
+                text += '<l>Nationalité</l>' + x.elements[3].value;
+                text += '<l>Profession</l>' + x.elements[4].value;
+                text += '<l>Lieu d’habitation</l>' + x.elements[5].value;
+                text += '<l>Situation financière</l>' + x.elements[6].value;
+                text += '<l>Spécificités</l>' + x.elements[7].value;
+                text += '<l>Clan</l>' + x.elements[8].value;
+                text += '<l>Possédé</l>' + x.elements[9].value;
+                text += '</div><div class="PRZTbg " style="background: url(';
+                text += "'" + x.elements[10].value;
+                text += "'";
+                text += ') 50% 50%; background-size: auto 100%;"> </div></div></div><div class="PRZTp2"><div class="PRZTarc human"></div></div><div class="PRZTp3"><div class="PRZTq"><ul id="ongletshuman"><li><input id="tabcaractereHuman" checked="checked" name="ongletshuman" type="radio" /> <label for="tabcaractereHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">TEMPÉRAMENT</div><div class="PRZT-text"><l>Caractère</l>' + x.elements[11].value;
+                text += '</div></div></li><li><input id="tabjourne6etypeHuman" name="ongletshuman" type="radio" /> <label for="tabjourneetypeHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">UNE JOURNÉE DANS VOTRE PEAU</div><div class="PRZT-text">' + x.elements[12].value;
+                text += '</div></div></li><li><input id="tabtraitsraciauxHuman" name="ongletshuman" type="radio" /> <label for="tabtraitsraciauxHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">' + x.elements[13].value;
+                text += '</div></div></li><li><input id="tabaffiliationsHuman" name="ongletshuman" type="radio" /> <label for="tabaffiliationsHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">' + x.elements[14].value;
+                text += '</div></div></li><li><input id="tabdetailsHuman" name="ongletshuman" type="radio" /> <label for="tabdetailsHuman"></label><div id="tab-content" class="onglet-content animated fadeIn"><div class="PRZT-title">' + x.elements[15].value;
+                text += '</div></div></li></ul><div class="PRZT-box"><div class="PRZT-box-title">Who am I ?</div><div class="PRZT-box-content-irl"><img class="PRZT-box-icon " src="https://i.imgbox.com/GEds325T.png" alt="" /><div class="PRZT-txt-irl"><l>Je suis</l>' + x.elements[16].value;
+                text += '<l>Blase</l>' + x.elements[17].value;
+                text += '<l>Visage</l>' + x.elements[18].value;
+                text += '<l>Sagesse</l>' + x.elements[19].value;
+                text += '<l>Découverte</l>' + x.elements[20].value;
+                text += '<l>Présence</l>' + x.elements[21].value;
+                text += '<l>Avis</l>' + x.elements[22].value;
+                text += '<l>Crédits</l>' + x.elements[23].value;
+                text += '<l>Mot de la fin</l>' + x.elements[24].value;
+                text += '</div></div></div></div></div></div></div>';
+                text = text.replace(/</gi, "&lt;");
+                text = text.replace(/>/gi, "&gt;");
+                text = '<code>' + text + '</code>';
+                document.getElementById("fich").innerHTML = text;
+            }
+        </script>
+    </body>
+>>>>>>> 1ad800639c3ca70bb2ec5131bb5159ff3bb776ae
 </html>
