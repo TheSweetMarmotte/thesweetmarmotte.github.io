@@ -79,7 +79,9 @@
         <div id="fich"></div>
         
         <script>
+            retrieve();
             function generer(){
+                storefields();
                 var x=document.getElementById("formulaire");
                 var text = '<div id="PRZT"><div class="PRZTp1"><div class="PRZTit">'+ x.elements[0].value;
                 text += '</div><div class="PRZTf"><img class="PRZTa" src="' + x.elements[1].value;
@@ -114,6 +116,28 @@
                 text = '<code>' + text + '</code>';
                 document.getElementById("fich").innerHTML = text;
             }
+            
+            function storefields() {
+            // Store
+                var x=document.getElementById("formulaire");
+                for (var i=0; i<25; i++) {
+                    localStorage.setItem("field"+i, x.elements[i].value);
+                }
+            }
+            
+            function retrieve() {
+            // Retrieve
+                var x=document.getElementById("formulaire");
+                for (var i=0; i<25; i++) {
+                    try {
+                        x.elements[i].value = localStorage.getItem("field"+i);
+                    }
+                    catch(err) {
+                        x.elements[i].value = "";
+                    }
+                }
+            }
+            
         </script>
     </body>
 </html>
