@@ -1,7 +1,7 @@
-input {
-    width: 250px;
+#inputlimite {
+    width: 400px;
     border-style: solid;
-    border-size: 5px;
+    border-width: 5px;
     border-color: #B5B1B1;
     border-radius: 4px;  
     height: 20px;
@@ -12,18 +12,18 @@ input {
     
 #fich {
     width: 500px;
-    background-color: rgba(160, 90, 205, 0.1);
+    background-color: #ffffff;
     border: 1px black;
     height: 450px;
     display: block;
-    margin: auto;
-    margin-top: 48px;
+    margin: 48px auto;
     overflow: scroll;
     white-space: pre-wrap;
 }
 
 body {
     background-color: #002266;
+    text-align: justify;
 }
 
 #devanture {
@@ -38,14 +38,56 @@ body {
 h1 {
     text-align: center;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    letter-spacing: 1px;
 }
 
 h2 {
     text-align: center;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    letter-spacing: -1px;
 }
 
 button {
     display: block;
     margin: auto;
+}
+
+#instruction {
+    width: 600px;
+    text-align: justify;
+    padding: 6px;
+    color: #ffffff;
+    margin: auto;
+}
+
+#inputetendu {
+    width: 400px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #b5b1b1;
+    border-radius: 4px;
+    height: 160px;
+    background-color: #efeaea;
+    padding: 5px;
+    display: block;
+}
+
+#rang {
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: letter-spacing 4s, text-indent 4s;
+    padding-bottom: 6px;
+}
+
+#rang:hover {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-indent: 20px;
+    padding-bottom: 6px;
+}
+
+#precision {
+    text-align: justify;
 }
