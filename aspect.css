@@ -22,17 +22,20 @@
 }
 
 body {
-    background-color: #002266;
+    background-image: url("http://www.aht.li/3081780/AA-BG.png");
     text-align: justify;
+    background-repeat: no repeat;
+    background-attachment: fixed;
 }
 
 #devanture {
     width: 600px;
     margin: auto;
-    background-color: #a6a6a6;
+    background-color: #ebeaeb;
     box-shadow: 1px 1px 1px 1px #000000;
     padding: 26px;
     margin-bottom: 46px;
+    border-radius: 4px;
 }
 
 h1 {
