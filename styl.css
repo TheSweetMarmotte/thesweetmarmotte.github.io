@@ -45,8 +45,14 @@
     text-align: center;
 }
 
-/* Bouton */
+/* Bouton de gauche transparent */
 #fleche {
+    background-color: transparent;
+    border: none;
+}
+
+/* Bouton de droite transparent */
+#flecheenvers {
     background-color: transparent;
     border: none;
 }
