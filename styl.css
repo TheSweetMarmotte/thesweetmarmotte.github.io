@@ -93,6 +93,7 @@
 #flechetournee {
     transform: scaleX(-1);
     background-color: transparent;
+    border: none;
 }
 
 /* Navigation sous les écrits */
