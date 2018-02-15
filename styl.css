@@ -45,11 +45,6 @@
     text-align: center;
 }
 
-/* Bouton */
-button {
-    background-color: transparent;
-}
-
 /* Groupe */
 .green {
     color: #8A0C0C;
@@ -97,6 +92,7 @@ button {
 /* Flèche gauche */
 #flechetournee {
     transform: scaleX(-1);
+    background-color: transparent;
 }
 
 /* Navigation sous les écrits */
