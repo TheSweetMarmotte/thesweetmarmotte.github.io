@@ -45,6 +45,11 @@
     text-align: center;
 }
 
+/* Bouton */
+button {
+    background-color: none;
+}
+
 /* Groupe */
 .green {
     color: #8A0C0C;
