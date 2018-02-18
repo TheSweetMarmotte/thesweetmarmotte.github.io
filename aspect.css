@@ -1,9 +1,11 @@
 /* background */
 body {
-    background-image: url("http://www.aht.li/3081780/AA-BG.png");
+    background-image: url(http://www.aht.li/3081780/AA-BG.png);
     text-align: justify;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: fixed;
+    background-position: top center;
+    background-color: #13363e;
 }
 
 /* header */
@@ -75,6 +77,8 @@ h2 {
     letter-spacing: 1px;
     transition: letter-spacing 4s, text-indent 4s;
     padding-bottom: 6px;
+    position: relative;
+    z-index: 99;
 }
 
 /* plusieurs phrases en italique */
@@ -117,7 +121,7 @@ h2 {
     position: absolute;
     width: 95%;
     left: 40px;
-    background-position: bottom;
+    position: bottom;
     bottom: 40px;
 }
 
@@ -156,4 +160,141 @@ button {
     margin: 48px auto;
     overflow: scroll;
     white-space: pre-wrap;
+}
+
+/*partie choisir bouton fiche 
+#left {
+    width: 50%;
+    display: block;
+    float: left;
+    height: 80%;
+}*/
+
+/* bouton humain */
+#humain {
+    background-color: #81A0A5;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* bouton outre */
+#outre {
+    background-color: #284562;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* bouton arcaniste */
+#arcaniste {
+    background-color: #4C505F;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* bouton theriantrope */
+#theriantrope {
+    background-color: #48451C;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/*partie choisir bouton fiche 
+#right {
+    width: 50%;
+    display: block;
+    float: right;
+    height: 80%;
+}*/
+
+/* bouton vampire */
+#vampire {
+    background-color: #8C3A38;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* bouton démon */
+#demon {
+    background-color: #0E0E0E;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* bouton histoire */
+#histoire {
+    background-color: #d2a679;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* bouton rp */
+#rp {
+    background-color: #e0e0d1;
+    width: 140px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px #7a7a52;
+}
+
+/* introduction à la première page */
+#debut {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Page initiale */
+#initial {
+    min-height: 100%;
+}
+
+/* Table de présentation des boutons */
+#table {
+    width: 100%;
+    display: table;
+}
+
+/* Colonne de gauche avec boutons */
+#columnleft {
+    width: 40%;
+    display: table-cell;
+}
+
+/* Colonne ou apparait le bouton sélectionné */
+#displayexplication {
+    width: 20%;
+    display: table-cell;
+    height: 80%;
+    position: relative;
+}
+
+/* Colonne de droite avec boutons */
+#columnright {
+    width: 40%;
+    display: table-cell;
+}
+
+/* Montrer l'explication de chaque sélection */
+#displayselectionne {
+    width: 100%;
+    height: 120px;
+    background-color: #ebeaea;
+    position: relative;
+    margin-top: 16px;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 4px;
 }

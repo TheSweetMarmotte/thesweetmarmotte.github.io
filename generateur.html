@@ -7,17 +7,43 @@
     
     <body>
         <!-- Header -->
-        <img src="http://www.aht.li/3081793/AA_-_head_-_title.png" alt="header">
+        <div id="initial">
+            <img src="http://www.aht.li/3081793/AA_-_head_-_title.png" alt="header">
             
-            <h1>Générateur</h1>
-                
+                <h1>Générateur</h1>
+            
+                    <div id="debut">Choisir générateur</div>
+                    <div id="table">
+                        <div id="columnleft">
+                        <button id="humain" onclick="view()">Humain</button>
+                        <button id="outre">Outre</button>
+                        <button id="arcaniste">Arcaniste</button>
+                        <button id="theriantrope">Thériantrope</button>
+                        </div>
+                        <div id="displayexplication">
+                        <div id="displayselectionne">
+                        <div id="phrasehumain">Vampires
+                        </div>
+                        </div>
+                        </div>
+                        <div id="columnright">
+                        <button id="vampire">Vampire</button>
+                        <button id="demon">Démon</button>
+                        <button id="histoire">Histoire</button>
+                        <button id="rp">Test rp</button>
+                        </div>
+                    </div>
+                    <div id="graphiste">Partie graphique de Gasmask</div>
+        </div>
+            
+        <div id="fichier">
                 <div id="instruction">Veuillez remplir chaque case avec l'information appropriée et appuyer sur le bouton "générer" pour obtenir
                 le code !
                 Si la page se ferme par erreur, il suffira de la réouvrir (et non pas d'en ouvrir une nouvelle) pour retrouver les
                 informations que votre navigateur aura gardé en mémoire.
                 </div>
                 
-                <div id="graphiste">Partie graphique de Gasmask</div>
+                
                 
                 <form id="formulaire">
                     
@@ -147,11 +173,11 @@
                     <div id="fich"></div>
                     <!-- Bouton reset -->
                     <button type="button" onclick="reset()">Reset</button>
-        
+        </div>
         <script>
             // Générer
             retrieve();
-            function generer(){
+            function generer() {
                 storefields();
                 var x=document.getElementById("formulaire");
                 var text = '<div id="PRZT"><div class="PRZTp1"><div class="PRZTit">'+ x.elements[0].value;
@@ -211,13 +237,28 @@
             }
             
             // Reset
-            function reset(){
+            function reset() {
                 var x=document.getElementById("formulaire");
                 for (var i=0; i<x.elements.length; i++) {
                         x.elements[i].value = "";
                     }
                 document.getElementById("fich").innerHTML = "";
                 }
+            
+            // Page initiale
+            var x = document.getElementById("fichier");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+            // Faite défiler l'image en pressant sur le bouton
+            function view() {
+                var elem = getElementById("displayselectionne");
+                var width = 0%;
+                var background: 
+            }
             
         </script>
     </body>

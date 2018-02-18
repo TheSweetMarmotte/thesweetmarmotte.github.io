@@ -92,6 +92,7 @@ width: 535px;
     opacity: 8.7;
     padding: 10px 8px;
     text-align: justify;
+    margin-bottom: 24px;
     width: 498px;
 }
 
@@ -115,16 +116,30 @@ width: 535px;
 
 /* Navigation sous les écrits */
 #navigation {
-    position: relative;
+    text-align: center;
     margin: auto;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+    display: block;
+    vertical-align: top;
 }
 
 /* Lien */
-a{
-    position: absolute;
-    margin: auto;
-    margin-bottom: 6px;
+#lien{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/* Colonne de la flèche */
+#colonneg {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Autre colonne de la flèche */
+#colonned {
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* Couleur groupe de partipants */
