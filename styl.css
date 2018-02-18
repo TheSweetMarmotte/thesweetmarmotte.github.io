@@ -105,12 +105,14 @@ width: 535px;
 #fleche {
     background-color: transparent;
     border: none;
+    position: absolute;
 }
 
 /* Bouton de droite transparent */
 #flecheenvers {
     background-color: transparent;
     border: none;
+    position: absolute;
 }
 
 /* Navigation sous les écrits */
