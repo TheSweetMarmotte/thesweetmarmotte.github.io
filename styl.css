@@ -124,6 +124,7 @@ width: 535px;
 /* Lien */
 a{
     position: absolute;
+    margin: auto;
     margin-bottom: 6px;
 }
 
