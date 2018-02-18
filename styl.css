@@ -105,20 +105,19 @@ width: 535px;
 #fleche {
     background-color: transparent;
     border: none;
-    position: absolute;
 }
 
 /* Bouton de droite transparent */
 #flecheenvers {
     background-color: transparent;
     border: none;
-    position: absolute;
 }
 
 /* Navigation sous les écrits */
 #navigation {
     text-align: center;
     margin-top: 8px;
+    position: absolute;
 }
 
 /* Couleur groupe de partipants */
