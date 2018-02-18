@@ -141,3 +141,8 @@ width: 535px;
     font-weight: bold;
     color: #f2f2f2;
 }
+
+/* Lien */
+a{
+    margin-bottom: 16px;
+}
