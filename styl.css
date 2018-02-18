@@ -1,32 +1,35 @@
 /* l'image de fond */
 .fondpv {
-    background-image: url(https://img15.hostingpics.net/pics/198846texture6.jpg);
-    background-repeat: repeat;
-    border-radius: 5px;
-    box-shadow: 0 0 2px 2px #;
-    margin-left: 30px;
-    margin-top: -20px;
-    padding-top: 60px;
-    height: 450px;
-    width: 535px;
+    background-color: #212121;
+background-image: url(https://zupimages.net/up/18/07/0d37.png);
+background-repeat: no-repeat;
+border-radius: 5px;
+box-shadow: inset 0 0 4px 2px #1a1a1a;
+margin-left: 30px;
+margin-top: 20px;
+padding-top: 70px;
+padding-bottom: 16px;
+width: 535px;
 }
 
 /* Typo haut */
 .prenomnom2 {
-    background-color: #000;
+    background-image: url(https://www.zupimages.net/up/18/07/5030.jpg);
+    background-repeat: repeat;
     border: 2px solid #;
     border-bottom: 1px #090909 dashed;
     border-radius: 0;
     border-top: 1px #090909 dashed;
     box-shadow: inset 0 0 8px 3px #;
-    color: #472B5C;
+    color: #B0A989;
     filter: alpha(opacity=90);
     font-family: 'Unica One', cursive;
     font-size: 22px;
     font-weight: 400;
+    font-weight: bold;
     margin-top: -35px;
     opacity: .9;
-    padding-bottom: 13px;
+    padding-bottom: 16px;
     padding-top: 10px;
     text-align: center;
     text-shadow: 2px 2px 2px #000;
@@ -35,14 +38,66 @@
 /* La phrase d'accroche sous le titre */
 .feat2 {
     border-radius: 0;
-    color: #8A0C0C;
+    color: #5f825b;
     filter: alpha(opacity=90);
     font-size: 11px;
     font-variant: small-caps;
     letter-spacing: 0;
-    margin-top: -15px;
+    margin-top: -20px;
     opacity: .9;
     text-align: center;
+}
+
+/* Groupe */
+.green {
+    color: #863826;
+    font-family: 'Unica One', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Phrase pour les groupes */
+.red2 {
+    color: #4d4d4d;
+    font-family: 'gothica';
+    font-size: 13px;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Texte */
+.texte {
+    height: 250px;
+    overflow-y: scroll;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Page */
+.commentaires2 {
+    background-image: url(https://www.zupimages.net/up/18/07/5030.jpg);
+    background-repeat: repeat;
+    border: 1px solid #090909;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 3px #;
+    color: #7D7979;
+    filter: alpha(opacity=80);
+    font-family: 'gothica';
+    font-size: 13px;
+    line-height: 100%;
+    margin-left: 10px;
+    margin-top: 30px;
+    opacity: 8.7;
+    padding: 10px 8px;
+    text-align: justify;
+    width: 498px;
+}
+
+/* Flèche gauche */
+#flechetournee {
+    transform: scaleX(-1);
+    background-color: none; 
 }
 
 /* Bouton de gauche transparent */
@@ -57,55 +112,6 @@
     border: none;
 }
 
-/* Groupe */
-.green {
-    color: #8A0C0C;
-    font-family: 'Unica One', cursive;
-    font-size: 24px;
-    text-align: center;
-}
-
-/* Phrase pour les groupes */
-.red2 {
-    color: #4d4d4d;
-    font-family: gothica;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 15px;
-    text-align: center;
-}
-
-/* Texte */
-.texte {
-    height: 250px;
-    overflow-y: scroll;
-    text-align: justify;
-}
-
-/* Page */
-.commentaires2 {
-    background-color: #000;
-    border: 1px solid #090909;
-    border-radius: 5px;
-    box-shadow: 0 0 3px 3px #;
-    color: #7D7979;
-    filter: alpha(opacity=80);
-    font-family: gothica;
-    font-size: 13px;
-    line-height: 100%;
-    margin-left: 10px;
-    margin-top: 30px;
-    opacity: 8.7;
-    padding: 10px 8px;
-    text-align: justify;
-    width: 498px;
-}
-
-/* Flèche gauche */
-#flechetournee {
-    transform: scaleX(-1);
-}
-
 /* Navigation sous les écrits */
 #navigation {
     text-align: center;
@@ -113,6 +119,22 @@
 }
 
 /* Couleur groupe de partipants */
-.groupebleu {
-    color: #006666;
+.groupechasseur {
+    color: #687853;
+}
+.groupevampire {
+    color: #803b28;
+}
+.groupeloupgarou {
+    color: #688a94;
+}
+.groupesorcier{
+    color: #5c4f67;
+}
+.groupehumain{
+    color: #916335;
+}
+.boldwhite{
+    font-weight: bold;
+    color: #f2f2f2;
 }
