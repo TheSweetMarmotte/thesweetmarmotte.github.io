@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <style>
+                #image {
+                    width: 40px;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <button onclick="enregistrer()"><img id="image" src="https://image.freepik.com/free-vector/facebook-like-icon_1017-8081.jpg"></button>
+            <p id="demo"></p>
+            
+            <script>
+                var enre = 0;
+                function enregistrer() {
+                    enre += 1;
+                    document.getElementById("demo").innerHTML = enre;
+                }
+            </script>
+            
+        </body>
+    <html>
