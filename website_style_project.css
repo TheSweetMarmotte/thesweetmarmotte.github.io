@@ -1,0 +1,116 @@
+/* to have a vertical menue 
+ ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+} */
+
+.logo {
+    float: left;
+    display: inline;
+}
+
+.image_logo {
+    height: 100px;
+}
+
+.menu {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 70%;
+    display: inline;
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+}
+
+a:hover {
+    color: rgb(157, 114, 191);
+}
+
+/*define the header pic*/
+
+.slideshow_container {
+    width: 1700px;
+    height: 600px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.slide_wrapper {
+    width: 5100px;
+    -webkit-animation: slide 19s ease infinite;
+    white-space: nowrap;
+}
+
+.slide {
+    float: left;
+    height: 600px;
+    width: 1700px;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0);
+    padding: 100px 0 0 0;
+}
+
+.slide:nth-child(1) {
+    background-image: url(../image/home_imag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(2) {
+    background-image: url(../image/home_imag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background-image: url(../image/home_imag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    40% {margin-left: -1700px;}
+    50% {margin-left: -1700px;}
+    60% {margin-left: -3400px;}
+    70% {margin-left: -3400px;}
+    80% {margin-left: -5100px;}
+    90% {margin-left: -5100px;}
+}
+
+.home {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    width: 1700px;
+    height: 100px;
+}
+
+.mail {
+    margin-left: 100px;
+    padding-top: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    float: left;
+    margin-right: 700px;
+}
+
+.liens {
+    padding-top: 60px;
+}
