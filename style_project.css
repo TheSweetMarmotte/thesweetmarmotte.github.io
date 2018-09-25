@@ -1,25 +1,23 @@
-/* to have a vertical menue 
- ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-} */
+/* logo */
 
 .logo {
-    float: left;
-    display: inline;
+    position: fixed;
+    z-index: 1;
+    margin-top: -40px;
 }
 
-.image_logo {
-    height: 100px;
-}
+/* menu */
 
 .menu {
     background-color: rgb(255, 255, 255);
     height: 100px;
-    width: 70%;
+    width: 100%;
     display: inline;
-    float: right;
+    z-index: -1;
+}
+
+ul {
+    padding-left: 400px;
 }
 
 li {
@@ -31,14 +29,14 @@ a {
     text-transform: uppercase;
     margin-right: 40px;
     color: rgb(0, 0, 0);
-    font-size: 19px;
+    font-size: 40px;
 }
 
 a:hover {
     color: rgb(157, 114, 191);
 }
 
-/*define the header pic*/
+/* slideshow */
 
 .slideshow_container {
     width: 1700px;
@@ -92,13 +90,11 @@ a:hover {
     90% {margin-left: -5100px;}
 }
 
-.home {
-    width: 100%;
-}
+/* foot */
 
 footer {
     background-color: rgb(0, 0, 0);
-    width: 1700px;
+    /*width: 1700px;*/
     height: 100px;
 }
 
