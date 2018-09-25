@@ -1,0 +1,52 @@
+header {
+    background-color: rgb(124, 149, 196);
+    height: 104px;
+    color: rgb(219, 231, 237);
+    padding: 50px;
+}
+
+header, section, aside, footer {
+    font-size: 50px;
+    font-family: Arial;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(55, 51, 61);
+}
+
+article {
+    background-color: rgb(109, 199, 197);
+    height: 1000px;
+}
+
+.text_from_article {
+    text-align: justify;
+    width: 500px;
+    font-size: 25px;
+    text-shadow: none;
+    text-transform: uppercase;
+    height: 900px;
+}
+
+.title_from_article {
+    font-size: 50px;
+    font-family: Arial;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(55, 51, 61);
+}
+
+section {
+    background-color: rgb(179, 114, 177);
+    width: 30%;
+    height: 1000px;
+    float: left;
+}
+
+aside {
+    background-color: rgb(115, 154, 186);
+    height: 190px;
+}
+
+footer {
+    background-color: rgb(123, 108, 140);
+}
