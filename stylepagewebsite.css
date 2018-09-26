@@ -1,0 +1,87 @@
+/* logo */
+
+.logo {
+    position: fixed;
+    z-index: 1;
+    margin-top: -40px;
+}
+
+/* menu */
+
+.menu {
+    height: 100px;
+    width: 100%;
+    display: inline;
+    z-index: 0;
+}
+
+header {
+    background-color: rgb(135, 106, 165);
+    height: 15%;
+    position: fixed;
+    width: 100%;
+    padding-top: 19px;
+}
+
+ul {
+    padding-left: 400px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+a:hover {
+    color: rgb(157, 114, 191);
+    font-size: 50px;
+    text-transform: lowercase;
+}
+
+/* image */
+
+.fond {
+    width: 100%;
+    overflow: hidden;
+    height: 90%;
+    background-image: url("../image/office.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.office {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: rgb(143, 121, 165);
+}
+
+.mail {
+    margin-left: 100px;
+    padding-top: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    float: left;
+    text-transform: uppercase;
+    margin-right: 700px;
+}
+
+.facebook {
+    width: 60px;
+}
+
+.liens {
+    padding-top: 60px;
+}
