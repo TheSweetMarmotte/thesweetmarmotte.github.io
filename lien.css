@@ -1,0 +1,95 @@
+.tabs {
+    clear: both;
+    margin: 25px 0;
+    position: relative;
+}
+
+.tab {
+    float: left;
+}
+
+.tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    border-top-left-radius: 7px;
+}
+
+/*.tab [type=radio] {
+    display: none;
+}
+
+.content {
+    left: 0;
+    background: white;
+    top: 28px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 400px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+[type=radio]:checked ~label .content {
+    z-index: 1;
+}*/
+
+.container mt-3 {
+    width: 270px;
+    border: 1px solid #ccc;
+    height: 390px;
+}
+
+.nav-link {
+    width: 90px;
+}
+
+.tab-content {
+    width: 270px;
+    border: 1px solid #ccc;
+}
+
+.nav nav-tabs {
+    width: 270px;
+    padding: 19px;
+    height: 390px;
+}
+
+#Home, #Menu, #Tab {
+    width: 270px;
+    padding: 19px;
+    height: 390px;
+}
+
+.nav-item {
+    border: none;
+}
+
+.illustration {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.character {
+    font-family: 'Courgette', cursive;
+    font-size: 29px;
+    text-align: center;
+}
+
+.text {
+    width: 240px;
+    font-size: 13px;
+    height: 340px;
+    overflow: scroll;
+}
