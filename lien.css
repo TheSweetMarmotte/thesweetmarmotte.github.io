@@ -1,1 +1,7 @@
-
+.principal {
+  width: 700px;
+  border-radius: 19px;
+  background-color: #CCC;
+  height: 340px;
+  margin: auto;
+}
